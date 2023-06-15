@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Personal website with HTML and CSS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+<section class="hero">
+    <div class="main-width">
+       <header>
+        <div class="logo">
+            <i class="fa-solid fa-g"></i>
+        </div>
+
+        <nav>
+            <div class="hamb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li class="btn"><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+       </header>
+
+       <div class="container">
+            <div class="hero-text">
+                <h3>Hi, There!</h3>
+                <h1>I Am <span class="input"></span></h1>
+                <p>A front-end web developer and UI/UX designer. Welcome to my world corner.</p>
+               <div class="social-icons">
+                   <a href="https://www.facebook.com/gladwell.munene.75" class="social-icon"><i class="fa-brands fa-square-facebook"></i></a>
+                   <a href="https://twitter.com/gladiemunene" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                   <a href="https://www.instagram.com/gladwell_munene/" class="social-icon"><i class="fa-brands fa-square-instagram"></i></a>
+                   <a href="https://www.linkedin.com/in/gladwell-m-a500a3271/" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="about.html" class="button">More About Me</a>
+             </div>
+
+            <div class="bottom">
+                <p>&copy; 2023 Gladwell. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var hamburger = document.querySelector(".hamb");
+    var navlist = document.querySelector(".nav-list");
+    var links = document.querySelectorAll(".nav-list li");
+    
+    hamburger.addEventListener("click", function() {
+    this.classList.toggle("click");
+    navlist.classList.toggle("open");
+    });
+
+    var type = new Typed(".input", {
+        strings: ["Gladwell Munene.", "Web Developer.", "UI/UX Designer."],
+        typespeed: 70,
+        backspeed: 60,
+        loop: true
+    });
+</script>
+
+</body>
+</html>

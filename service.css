@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:powderblue;
+    padding: 20px;
+    color: royalblue;
+}
+
+nav ul {
+    list-style-type: none;
+    margin right: 20;
+    padding: 20;
+    text-align: center;
+    font-size: 30;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+.services-section {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+}
+
+.services-section .main-width {
+  text-align: center;
+}
+
+.services-section h2 {
+  color: #008080; /* Powder Blue */
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.web-development h3 {
+  color: #008080; /* Powder Blue */
+  font-size: 24px;
+}
+
+.ui-ux-design h3 {
+  color: #008080; /* Powder Blue */
+  font-size: 24px;
+}
+.services-section .web-development ul,
+.services-section .ui-ux-design ul {
+  border: none;
+}
+
+.scrolling-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.scrolling-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Footer Section */
+footer {
+  background-color:#333;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #008080; /* Powder Blue */
+}
+
+.contact-info p {
+  color: white;
+  margin: 5px 0;
+}
+
